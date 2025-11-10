@@ -44,7 +44,7 @@
           >
             <span id="myself"></span
             ><span
-              class="text-green"
+              class="text-green-one"
               id="subhajitde"
               data-toggle="tooltip"
               data-bs-placement="right"
@@ -78,6 +78,63 @@
             class="text-white main-text col-12"
             style="color: green; margin-top: 20px; display: none"
           ></div>
+          <div id="s_skills" style="display: none">
+            <ol>
+              <li>
+                <h1 class="text-green">Android programming</h1
+                >
+              </li>
+              <li>
+                <h1 class="text-green">SQLite in android</h1>
+              </li>
+              <li>
+                <h1 class="text-green">Retrofit</h1>
+              </li>
+              <li>
+                <h1 class="text-green">RestApi</h1>
+              </li>
+              <li>
+                <h1 class="text-green">MVVM</h1>
+              </li>
+              <li>
+                <h1 class="text-green">JSON/XML</h1>
+              </li>
+              <li>
+                <h1 class="text-green">Git in android studio</h1>
+              </li>
+              <li>
+                <h1 class="text-green">Java and kotlin</h1>
+              </li>
+              <li>
+                <h1 class="text-green">Object oriented programming</h1>
+              </li>
+              <li>
+                <h1 class="text-green">Canvas in android</h1>
+              </li>
+              <li>
+                <h1 class="text-green">Dagger 2/ Dagger Hilt</h1>
+              </li>
+              <li>
+                <h1 class="text-green">Jetpack Compose</h1>
+              </li>
+              <li>
+                <h1 class="text-green">React Native</h1>
+              </li>
+            </ol>
+          </div>
+          <div
+            id="continue_three"
+            class="text-white main-text col-12"
+            style="display: none"
+            onclick="continueThree()"
+          >
+            continue...
+          </div>
+          <div
+            id="section-four"
+            class="text-white main-text col-12"
+            style="color: green; margin-top: 20px; display: none"
+          ></div>
           <div id="p_platforms" style="display: none">
             <ul>
               <li>
@@ -97,15 +154,15 @@
             </ul>
           </div>
           <div
-            id="continue_three"
+            id="continue_four"
             class="text-white main-text col-12"
             style="display: none"
-            onclick="continueThree()"
+            onclick="continueFour()"
           >
             continue...
           </div>
           <div
-            id="section-four"
+            id="section-five"
             class="text-white main-text col-12"
             style="color: green; margin-top: 20px; display: none"
           ></div>
@@ -203,63 +260,7 @@
             </ul>
           </div>
 
-          <div
-            id="continue_four"
-            class="text-white main-text col-12"
-            style="display: none"
-            onclick="continueFour()"
-          >
-            continue...
-          </div>
-          <div
-            id="section-five"
-            class="text-white main-text col-12"
-            style="color: green; margin-top: 20px; display: none"
-          ></div>
-          <div id="s_skills" style="display: none">
-            <ul>
-              <li>
-                <h1 class="text-green">Android programming</h1
-                >
-              </li>
-              <li>
-                <a class="text-green">SQLite in android</a>
-              </li>
-              <li>
-                <a class="text-green">Retrofit</a>
-              </li>
-              <li>
-                <a class="text-green">RestApi</a>
-              </li>
-              <li>
-                <a class="text-green">MVVM</a>
-              </li>
-              <li>
-                <a class="text-green">JSON/XML</a>
-              </li>
-              <li>
-                <a class="text-green">Git in android studio</a>
-              </li>
-              <li>
-                <a class="text-green">Java and kotlin</a>
-              </li>
-              <li>
-                <a class="text-green">Object oriented programming</a>
-              </li>
-              <li>
-                <a class="text-green">Canvas in android</a>
-              </li>
-              <li>
-                <a class="text-green">Dagger 2/ Dagger Hilt</a>
-              </li>
-              <li>
-                <a class="text-green">Jetpack Compose</a>
-              </li>
-              <li>
-                <a class="text-green">React Native</a>
-              </li>
-            </ul>
-          </div>
+          
           <div
             id="continue_five"
             class="text-white main-text col-12"
@@ -315,11 +316,12 @@
       var txt = "Hi, there, I am ";
       var txtTwo =
         "I am an experienced android developer. I have expertise in good animations, canvas android, making responsive designs and writing quality code. ";
-      var txtThree =
+      var  txtThree = " My skills are ";
+        var txtFour =
         " I also like to learn and help others to learn. These are some of the platforms below which I use";
-      var txtFour =
+      var txtFive =
         " I have worked in many good projects throughout my career which are";
-      var txtFive = " My skills are ";
+      
       var txtSix = " You can contact me via ";
       var speed = 50;
 
@@ -360,7 +362,7 @@
           setTimeout(continueTwo, speed);
         } else if (i == txtThree.length) {
           i = 0;
-          document.getElementById("p_platforms").style.display = "block";
+          document.getElementById("s_skills").style.display = "block";
           document.getElementById("continue_three").style.display = "block";
         }
       }
@@ -375,7 +377,7 @@
           setTimeout(continueThree, speed);
         } else if (i == txtFour.length) {
           i = 0;
-          document.getElementById("works").style.display = "block";
+          document.getElementById("p_platforms").style.display = "block";
           document.getElementById("continue_four").style.display = "block";
           window.scrollTo(0, document.body.scrollHeight);
         }
@@ -391,7 +393,7 @@
           setTimeout(continueFour, speed);
         } else if (i == txtFive.length) {
           i = 0;
-          document.getElementById("s_skills").style.display = "block";
+          document.getElementById("works").style.display = "block";
           document.getElementById("continue_five").style.display = "block";
           window.scrollTo(0, document.body.scrollHeight);
         }

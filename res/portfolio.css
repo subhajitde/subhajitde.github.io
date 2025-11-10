@@ -15,6 +15,13 @@
   color: rgb(16, 233, 16) !important;
 }
 
+.text-green-one {
+  /* font-family: "Press Start 2P", cursive; */
+  font-family: "Bruno Ace SC", cursive;
+  font-size: 22px;
+  color: rgb(16, 233, 16) !important;
+}
+
 .text-white-one {
   /* font-family: "Press Start 2P", cursive; */
   font-family: "Bruno Ace SC", cursive;
@@ -59,6 +66,20 @@ body {
 button a {
   text-decoration: none;
   color: black;
+}
+
+
+/* Or for individual list items */
+#s_skills{
+  padding-top: 5px;
+}
+#s_skills ol li {
+  color:white
+  
+}
+#s_skills ol li h1 {
+  line-height: 0.5;
+  
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
